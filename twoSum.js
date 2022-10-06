@@ -23,7 +23,7 @@
 // Output: [0,1]
 
 // Dificulty: 
-// Easy
+// EASY
 
 // Solution:
 
