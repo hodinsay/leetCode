@@ -65,3 +65,5 @@ function addTwoNumbers(l1, l2) {
     // Return the constructed ListNode (ignoring the first dummy entry)
     return newListNode.next;
 };
+
+// Source: https://duncan-mcardle.medium.com/leetcode-problem-2-add-two-numbers-javascript-2c158d3b965

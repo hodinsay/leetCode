@@ -54,3 +54,5 @@ function lengthOfLongestSubstring(s) {
 
     return longestStringLength;
 };
+
+// Source: https://duncan-mcardle.medium.com/leetcode-problem-2-longest-substring-without-repeating-characters-javascript-993890bf8eac

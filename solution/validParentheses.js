@@ -30,23 +30,37 @@
 // Solution:
 
 function isValid(s) {
-    const stack = [];
-    
-    for (let i = 0 ; i < s.length ; i++) {
-        let c = s.charAt(i);
-        switch(c) {
-            case '(': stack.push(')');
+    // Initialise an array to store the closing brackets expected
+    let expectedBrackets = [];
+
+    // Loop through the letters in the input string
+    for (let letter = 0; letter < inputString.length; letter++) {
+        switch (inputString[letter]) {
+            // Push the closing equivelant of any open brackets found
+            case '{': {
+                expectedBrackets.push('}');
                 break;
-            case '[': stack.push(']');
+            }
+            case '[': {
+                expectedBrackets.push(']');
                 break;
-            case '{': stack.push('}');
+            }
+            case '(': {
+                expectedBrackets.push(')');
                 break;
-            default:
-                if (c !== stack.pop()) {
+            }
+            // If a close bracket is found, check that it matches the last stored open bracket
+            default: {
+                if (expectedBrackets.pop() !== inputString[letter]) {
                     return false;
                 }
+            }
         }
     }
-    
-    return stack.length === 0;
+
+    // Return based on whether or not anything remains
+    // (indicates that there were incorrect brackets)
+    return !expectedBrackets.length;
 };
+
+// Source: https://duncan-mcardle.medium.com/leetcode-problem-20-valid-parentheses-javascript-a75d1744ec0d

@@ -44,3 +44,5 @@ function removeDuplicates(nums) {
     }
     return i + 1;
 };
+
+// Source: https://dev.to/urfan/leetcode-merge-two-sorted-lists-with-javascript-h2m

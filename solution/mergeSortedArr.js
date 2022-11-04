@@ -53,3 +53,5 @@ function merge(nums1, m, nums2, n) {
   }
   return nums1
 };
+
+// Source: https://javascript.plainenglish.io/leetcode-algorithm-series-merge-sorted-array-3ec101aa3cca

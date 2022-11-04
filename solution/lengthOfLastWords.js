@@ -6,8 +6,6 @@
 
 // A word is a maximal substring consisting of non-space characters only.
 
- 
-
 // Example 1:
 
 // Input: s = "Hello World"
@@ -33,3 +31,5 @@ function lengthOfLastWord(s) {
     const words = s.trim().split(" ");
     return words.length > 0 ? words[words.length - 1].length : 0;
 };
+
+// Source: https://rishabh1403.com/posts/coding/leetcode/2020/03/leetcode-length-of-last-word
