@@ -36,20 +36,25 @@
 // Solution:
 
 function plusOne(digits) {
-    let i = digits.length - 1;
-    let val = 0;
-    let carry = 1;
-    
-    while (i >= 0 && carry) {
-        val = digits[i] + carry;
-        carry = Math.floor(val / 10);
-        digits[i] = val % 10;
-        i--;
-    }
-    
-    if (carry) {
-        digits.unshift(carry)
-    }
-    
-    return digits;
-};
+	// we start iterating from the end of array.
+    for (let i = digits.length - 1; i >= 0; i--) {
+        // if the current digit[i] is under 9  we just increment it by one and breaking the loop.
+          if (digits[i] < 9) {
+            digits[i]++;
+            break;
+          }
+           
+       // else if the current (digit[i])  equal 9 but not the the first digit in the array, we make it zero 
+          else if (digits[i] === 9 && i !== 0) digits[i] = 0;
+           
+       // else if we reached the first digit in the array and it is equal 9, we make it 1 and push a new digit to the end of array which is 0
+          else if (digits[i] === 9 && i == 0) {
+            digits[i] = 1;
+            digits.push(0);
+          }
+        }
+          
+        return digits
+      };
+
+// Source: https://leetcode.com/problems/plus-one/discuss/2556881/JavaScript-Solution-With-Comments-O(n)-Time-Complexity

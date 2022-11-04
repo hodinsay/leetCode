@@ -30,6 +30,7 @@
 // Solution:
 
 function climbStairs(n) {
+    // Base cases
     if (n == 1 || n == 0) {
         return 1
     }
@@ -44,3 +45,5 @@ function climbStairs(n) {
     }
     return second;
 };
+
+// Source: https://dev.to/urfan/leetcode-climbing-stairs-with-javascript-1dme

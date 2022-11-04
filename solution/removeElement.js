@@ -58,5 +58,9 @@ function removeElement(nums, val) {
             i++;
         }
     }
+
+    //nums.length = j; // Chop the surplus values - not needed for LC submission
     return i;
 };
+
+// Source: https://duncan-mcardle.medium.com/leetcode-problem-27-remove-element-javascript-caaf2aeda108
