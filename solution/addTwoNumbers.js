@@ -17,12 +17,10 @@
 // Explanation: 342 + 465 = 807.
 
 // Example 2:
-
 // Input: l1 = [0], l2 = [0]
 // Output: [0]
 
 // Example 3:
-
 // Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 // Output: [8,9,9,9,0,0,0,1]
 
@@ -76,3 +74,4 @@ function addTwoNumbers(l1, l2) {
 // Source: 
 // https://duncan-mcardle.medium.com/leetcode-problem-2-add-two-numbers-javascript-2c158d3b965
 // https://leetcode.com/problems/add-two-numbers/submissions/
+
