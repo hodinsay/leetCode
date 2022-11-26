@@ -1,5 +1,9 @@
 // Integer to Roman 
 
+// Language: JavaScript
+
+// DIFFICULTY: Medium
+
 // DESCRIPTION:
 
 // Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -40,9 +44,6 @@
 // Output: "MCMXCIV"
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
-// DIFFICULTY:
-// MEDIUM 
-
 // Solution:
 
 const intToRoman = function(num) {
@@ -65,5 +66,8 @@ const intToRoman = function(num) {
     }
     return result;
 };
+
+// Runtime: 108 ms
+// Memory: 46.5 MB
 
 // Source: https://duncan-mcardle.medium.com/leetcode-problem-12-integer-to-roman-numerals-javascript-83b6314f0703
